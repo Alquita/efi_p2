@@ -83,7 +83,8 @@
         <div class="row g-3 mb-3">
           <div class="col-md-6">
             <label for="celular" class="form-label">Celular *</label>
-            <input type="tel" class="form-control" id="celular" name="celular" placeholder="111 2345 678" required>
+            <input type="tel" class="form-control" id="celular" name="celular" placeholder="111 2345 678" inputmode="numeric" autocomplete="tel" minlength="9" maxlength="12" pattern="^\d{9,12}$" title="Ingresá solo números (9 a 12 dígitos)" required>
+            <div class="invalid-feedback">Ingresá solo números (9 a 12 dígitos).</div>
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email *</label>
