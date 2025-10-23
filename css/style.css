@@ -147,6 +147,28 @@
     padding: 10px;
   }
   
+  .h1-title {
+    text-align: center;
+    color: #f28c28;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .p-text {
+    text-align: left;
+    color: white;
+    padding: 10px;
+  }
+  .detalle summary {
+    color: white;            
+    padding: 10px 20px;       
+    border-radius: 8px;       
+    background-color: green;  
+    list-style: none;         
+    display: inline-block; 
+  }
+
+
   
   
 
