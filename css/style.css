@@ -167,6 +167,31 @@
     list-style: none;         
     display: inline-block; 
   }
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+
+  }
+  .whatsapp-button img {
+    width: 90%;
+    height: 90%;
+  }
+  .pp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+  }
+  .pp-button img {
+    width: 90%;
+    height: 90%;
+  }
 
 
   
