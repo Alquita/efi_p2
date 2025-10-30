@@ -92,7 +92,9 @@
 					<div class="card-body">
 						<h5 class="card-title text-center">Olivia</h5>
 						<p class="card-text">Cachorrita color negro con manchita blanca en el pecho. Le gustan los niños es muy cariñosa y juguetona.</p>
-						<a href="#" class="btn containertext">Detalle</a>
+						<button type="button" class="btn containertext" data-bs-toggle="modal" data-bs-target="#modalScrollableOlivia">
+							Ver detalles
+						</button>
 					</div>
 				</div>
 			</div>
@@ -101,8 +103,10 @@
 					<img src="img/gato1.png" class="card-img-top img-fluid" alt="foto gato naranja">
 					<div class="card-body">
 						<h5 class="card-title text-center">Lyon</h5>
-						<p class="card-text">Gatito naranja, tiene 2 años aproximadamente. Es muy tranquilo, le gusta dormir y es buen compañero.</p>
-						<a href="#" class="btn containertext">Detalle</a>
+						<p class="card-text">Gatito color naranja. Es muy tranquilo, le gusta dormir y es buen compañero.</p>
+						<button type="button" class="btn containertext" data-bs-toggle="modal" data-bs-target="#modalScrollableLyon">
+							Ver detalles
+						</button>
 					</div>
 				</div>
 			</div>
@@ -111,8 +115,10 @@
 					<img src="img/gato2.png" class="card-img-top img-fluid" alt="foto gato negro">
 					<div class="card-body">
 						<h5 class="card-title text-center">Merli</h5>
-						<p class="card-text">Gato color negro, llego muy enfermo. Tiene 7 años aprox, cariñoso y no le gusta estar solo.</p>
-						<a href="#" class="btn containertext">Detalle</a>
+						<p class="card-text">Gato color negro, llego muy enfermo. Cariñoso y no le gusta estar solo.</p>
+						<button type="button" class="btn containertext" data-bs-toggle="modal" data-bs-target="#modalScrollableMerli">
+							Ver detalles
+						</button>
 					</div>
 				</div>
 			</div>
@@ -124,7 +130,9 @@
 					<div class="card-body">
 						<h5 class="card-title text-center">Rocky</h5>
 						<p class="card-text">Excelente compañero, se lleva bien con otros perros. No muerde, ideal para persona mayor.</p>
-						<a href="#" class="btn containertext">Detalle</a>
+						<button type="button" class="btn containertext" data-bs-toggle="modal" data-bs-target="#modalScrollableRocky">
+							Ver detalles
+						</button>
 					</div>
 				</div>
 			</div>
@@ -134,11 +142,358 @@
 					<div class="card-body">
 						<h5 class="card-title text-center">Tom</h5>
 						<p class="card-text">Perro rescatado de trabajo. Especial amigo bicolor, tiene caracter y es protector. No es amistoso con otros perros.</p>
-						<a href="#" class="btn containertext">Detalle</a>
+						<button type="button" class="btn containertext" data-bs-toggle="modal" data-bs-target="#modalScrollableTom">
+							Ver detalles
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section id="modals">
+		<div class="modal fade" id="modalScrollableOlivia">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Detalles de Olivia</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/perro1.png" class="img-fluid mb-3" alt="foto perro">
+						<p><strong>Nombre:</strong> Olivia</p>
+						<p><strong>Edad:</strong> 6 meses</p>
+						<p><strong>Sexo:</strong> Hembra</p>
+						<p><strong>Raza:</strong> Mestiza</p>
+						<p><strong>Descripción:</strong>  Cachorrita mestiza de pelaje negro con una tierna manchita blanca en el pecho. Es muy sociable, cariñosa y juguetona. Le encanta estar con niños y recibir mimos. Ideal para una familia activa que quiera sumar alegría al hogar.</p>
+					</div>
+					<div class="modal-footer bg-light">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button class="btn btn-primary" data-bs-target="#modalAdoptarOlivia" data-bs-toggle="modal">Adoptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalAdoptarOlivia">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Formulario de adopción - Olivia</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formAdopcionOlivia">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="telefono" class="form-label">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" required>
+					</div>
+					<div class="mb-3">
+						<label for="comentario" class="form-label">¿Por qué querés adoptar a Olivia?</label>
+						<textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#modalScrollableOlivia" data-bs-toggle="modal">Volver</button>
+					<button type="submit" class="btn btn-success" form="formAdopcionOlivia">Enviar solicitud</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalGracias" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center">
+					<div class="modal-body p-5">
+						<h4 class="mb-3">¡Gracias por tu solicitud!</h4>
+						<p>Pronto nos pondremos en contacto contigo para continuar con el proceso de adopción.</p>
+						<button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalScrollableLyon">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Detalles de Lyon</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/gato1.png" class="img-fluid mb-3" alt="foto gato naranja">
+						<p><strong>Nombre:</strong> Lyon</p>
+						<p><strong>Edad:</strong> 2 Años</p>
+						<p><strong>Sexo:</strong> Macho</p>
+						<p><strong>Raza:</strong> Mestizo</p>
+						<p><strong>Descripción:</strong> Joven gato color naranja de unos 2 años. Tiene una personalidad tranquila y relajada: disfruta dormir al sol y observar desde la ventana. Es un gran compañero, perfecto para quienes buscan una presencia serena en casa.</p>
+					</div>
+					<div class="modal-footer bg-light">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button class="btn btn-primary" data-bs-target="#modalAdoptarLyon" data-bs-toggle="modal">Adoptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalAdoptarLyon">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Formulario de adopción - Lyon</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formAdopcionLyon">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="telefono" class="form-label">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" required>
+					</div>
+					<div class="mb-3">
+						<label for="comentario" class="form-label">¿Por qué querés adoptar a Lyon?</label>
+						<textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#modalScrollableLyon" data-bs-toggle="modal">Volver</button>
+					<button type="submit" class="btn btn-success" form="formAdopcionLyon">Enviar solicitud</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalGracias" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center">
+					<div class="modal-body p-5">
+						<h4 class="mb-3">¡Gracias por tu solicitud!</h4>
+						<p>Pronto nos pondremos en contacto contigo para continuar con el proceso de adopción.</p>
+						<button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalScrollableMerli">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Detalles de Merli</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/gato2.png" class="img-fluid mb-3" alt="foto gato negro">
+						<p><strong>Nombre:</strong> Merli</p>
+						<p><strong>Edad:</strong> 7 Años</p>
+						<p><strong>Sexo:</strong> Macho</p>
+						<p><strong>Raza:</strong> Mestizo</p>
+						<p><strong>Descripción:</strong> Gatito negro de unos 7 años que superó una etapa difícil con mucho amor y cuidado. Es dulce, mimoso y disfruta de la compañía humana. No le gusta quedarse solo mucho tiempo, por lo que busca un hogar tranquilo y afectuoso.</p>
+					</div>
+					<div class="modal-footer bg-light">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button class="btn btn-primary" data-bs-target="#modalAdoptarMerli" data-bs-toggle="modal">Adoptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalAdoptarMerli">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Formulario de adopción - Merli</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formAdopcionMerli">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="telefono" class="form-label">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" required>
+					</div>
+					<div class="mb-3">
+						<label for="comentario" class="form-label">¿Por qué querés adoptar a Merli?</label>
+						<textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#modalScrollableMerli" data-bs-toggle="modal">Volver</button>
+					<button type="submit" class="btn btn-success" form="formAdopcionMerli">Enviar solicitud</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalGracias" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center">
+					<div class="modal-body p-5">
+						<h4 class="mb-3">¡Gracias por tu solicitud!</h4>
+						<p>Pronto nos pondremos en contacto contigo para continuar con el proceso de adopción.</p>
+						<button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalScrollableRocky">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Detalles de Rocky</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/perro2.png" class="img-fluid mb-3" alt="foto perro salchicha">
+						<p><strong>Nombre:</strong> Rocky</p>
+						<p><strong>Edad:</strong> 3 Años</p>
+						<p><strong>Sexo:</strong> Macho</p>
+						<p><strong>Raza:</strong> Dachshund</p>
+						<p><strong>Descripción:</strong> Perro joven con una gran personalidad y corazón noble. Es obediente, sociable y se lleva muy bien con otros perros. No muerde ni causa problemas, por eso es ideal para personas mayores o familias que busquen un compañero fiel y tranquilo.</p>
+					</div>
+					<div class="modal-footer bg-light">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button class="btn btn-primary" data-bs-target="#modalAdoptarMerli" data-bs-toggle="modal">Adoptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalAdoptarRocky">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Formulario de adopción - Rocky</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formAdopcionRocky">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="telefono" class="form-label">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" required>
+					</div>
+					<div class="mb-3">
+						<label for="comentario" class="form-label">¿Por qué querés adoptar a Rocky?</label>
+						<textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#modalScrollableRocky" data-bs-toggle="modal">Volver</button>
+					<button type="submit" class="btn btn-success" form="formAdopcionRocky">Enviar solicitud</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalGracias" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center">
+					<div class="modal-body p-5">
+						<h4 class="mb-3">¡Gracias por tu solicitud!</h4>
+						<p>Pronto nos pondremos en contacto contigo para continuar con el proceso de adopción.</p>
+						<button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalScrollableTom">
+			<div class="modal-dialog modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Detalles de Tom</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/perro3.png" class="img-fluid mb-3" alt="foto perro vaca">
+						<p><strong>Nombre:</strong> Tom</p>
+						<p><strong>Edad:</strong> 6 Años</p>
+						<p><strong>Sexo:</strong> Macho</p>
+						<p><strong>Raza:</strong> Mestizo</p>
+						<p><strong>Descripción:</strong> Perro bicolor rescatado del trabajo rural. Es fuerte, leal y protector con quienes confía. Tiene carácter y no se lleva bien con otros perros, pero con una familia paciente puede ser el amigo más incondicional y agradecido que uno pueda tener.</p>
+					</div>
+					<div class="modal-footer bg-light">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<button class="btn btn-primary" data-bs-target="#modalAdoptarTom" data-bs-toggle="modal">Adoptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalAdoptarTom">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Formulario de adopción - Tom</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<form id="formAdopcionTom">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="mb-3">
+						<label for="telefono" class="form-label">Teléfono</label>
+						<input type="tel" class="form-control" id="telefono" required>
+					</div>
+					<div class="mb-3">
+						<label for="comentario" class="form-label">¿Por qué querés adoptar a Tom?</label>
+						<textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-target="#modalScrollableTom" data-bs-toggle="modal">Volver</button>
+					<button type="submit" class="btn btn-success" form="formAdopcionTom">Enviar solicitud</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalGracias" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center">
+					<div class="modal-body p-5">
+						<h4 class="mb-3">¡Gracias por tu solicitud!</h4>
+						<p>Pronto nos pondremos en contacto contigo para continuar con el proceso de adopción.</p>
+						<button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/modal-adoption.js"></script>
 </body>
 </html>
