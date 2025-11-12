@@ -108,6 +108,16 @@ html, body{
   border-color: #2a2a2a !important;
 }
 
+.accordion-button:not(.collapsed) {
+  color: var(--bg);
+  background-color: var(--accent);
+}
+
+.accordion-button {
+  color: var(--bg);
+  background-color: var(--text);
+}
+
 .sub-text{ 
   color: var(--muted) !important; 
   font-size: 1rem;
