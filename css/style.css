@@ -303,6 +303,11 @@ html, body{
   gap: 8px;
 }
 
+.modal-content {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
 @media (max-width: 991px) {
   .navbar-nav {
     margin-top: 15px;
